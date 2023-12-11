@@ -1,8 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
 :root {
     --together-color : rgb(99, 218, 83);;
     --protect-color : rgb(255, 116, 139);
     --raise-color : rgb(255, 196, 0);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+}
+
 
 .header {
     width: 1200px;
@@ -18,6 +29,7 @@
 .headerBtnWrap {
     display: flex;
     align-items: center;
+    list-style: none;
 }
 
 .headerBtn:hover {
@@ -28,12 +40,8 @@
 .rightHeaderBtn {
     margin-left: 10px;
 }
-
-.heart {
-    margin-right: 3px;
-}
-
 /*--------- header left ---------*/
+
 /* 공통 메뉴 */
 .menuWrap {
     display: flex;
@@ -48,11 +56,12 @@
     font-size: 16px;
     text-align: center;
     padding: 5px;
+    color: #444;
 }
 
 /* 표시되는 메뉴 */
 .menuTitleWrap {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444;
 }
 
 .menuTitleWrap div {
