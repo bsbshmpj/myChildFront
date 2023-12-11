@@ -16,7 +16,7 @@ a {
 
 /* ------------------------------------------------------------ */
 
-#togetherList-wrap {
+#protectList-wrap {
     margin: 30px auto;
     width: 1200px;
 }
@@ -40,7 +40,7 @@ a {
     border-right: none;
 }
 .type-outline > .active {
-    background-color: #c0eecc;
+    background-color: #ffd8e6;
 }
 .type {
     width: 115px;
@@ -55,7 +55,7 @@ a {
     cursor: pointer;
 }
 .type:hover {
-    background-color: #c0eecc;
+    background-color: #ffd8e6;
 }
 
 /* ------------------------------------------------------------ */
@@ -65,62 +65,52 @@ a {
     border-radius: 0 5px 5px 5px;
 }
 #list-wrap {
-    width: 1120px;
+    width: 1125px;
     margin: 40px auto;
+    text-align: center;
+    font-size: 18px;
+    /* border: 2px solid #d7d7d7; */
+    /* border-radius: 0 5px 5px 5px; */
+}
+#thead {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 40px;
+    align-items: center;
+    background-color: rgb(218, 218, 218);
+    height: 80px;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
 }
 .list-content {
-    width: 200px;
-    height: 320px;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    row-gap: 5px;
-    position: relative;
-    border: 2px solid #e9e9e9;
-    border-radius: 10px;
-    transition: 0.2s all;
+    /* border-bottom: 1px solid rgb(180, 180, 180);
+    border-left: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180); */
+    border-bottom: 2px solid #e9e9e9;
+    border-left: 2px solid #e9e9e9;
+    border-right: 2px solid #e9e9e9;
+}
+.list-content:last-child {
+    border-radius: 0 0 10px 10px;
 }
 .list-content:hover {
-    border: 2px solid #d7d7d7;
-    background-color: #ececec;
+    background-color: #f0f0f0;
 }
-.content-img {
-    width: 160px;
-    height: 225px;
-    margin-bottom: 10px;
-    background: url(../img/imageSrc.png) no-repeat center / cover;
-    border-radius: 5px;
+.list-content:hover > .content-title{
     cursor: pointer;
 }
-.content-zzimBtn {
-    position: absolute;
-    bottom: 65px;
-    right: 13px;
+#list-wrap p:nth-of-type(1) {
+    width: 10%;
 }
-svg {
-    width: 30px;
+#list-wrap p:nth-of-type(2) {
+    width: 25%;
 }
-#heart {
-    fill: white;
-    stroke: #333;
-    stroke-width: 60px;
-    cursor: pointer;
-    transition: 0.2s all;
+#list-wrap p:nth-of-type(3) {
+    width: 35%;
 }
-#heart:hover {
-    fill: rgb(255, 80, 80);
-}
-.content-title {
-    font-weight: 500;
-    cursor: pointer;
-}
-.content-period {
-    font-size: 14px;
+#list-wrap p:nth-of-type(4) {
+    width: 30%;
 }
 
 /* ------------------------------------------------------------ */
