@@ -1,0 +1,119 @@
+:root {
+    --together-color : rgb(99, 218, 83);;
+    --protect-color : rgb(255, 116, 139);
+    --raise-color : rgb(255, 196, 0);
+}
+
+.header {
+    width: 1200px;
+    height: 120px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    z-index: 10;
+}
+
+.headerBtnWrap {
+    display: flex;
+    align-items: center;
+}
+
+.headerBtn:hover {
+    cursor: pointer;
+}
+
+/*--------- header right ---------*/
+.rightHeaderBtn {
+    margin-left: 10px;
+}
+
+.heart {
+    margin-right: 3px;
+}
+
+/*--------- header left ---------*/
+/* 공통 메뉴 */
+.menuWrap {
+    display: flex;
+    margin-left: 10px;
+    position: absolute;
+    top: 35px;
+    left: 130px;
+}
+
+.menuText {
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* 표시되는 메뉴 */
+.menuTitleWrap {
+    border-bottom: 2px solid black;
+}
+
+.menuTitleWrap div {
+    display: block;
+    font-size: 20px;
+}
+
+.menuTitleWrap > .togetherBtn {
+    color: var(--together-color)
+}
+
+.menuTitleWrap > .protectBtn {
+    display: none;
+    color: var(--protect-color)
+}
+
+.menuTitleWrap > .raiseBtn {
+    display: none;
+    color: var(--raise-color)
+}
+
+/* 움직이는 메뉴 */
+.menuBtnWrap {
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    height: 0px;
+    width: 110px;
+    border-radius: 0 0 5px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 움직이기 */
+.slideMenuDown {
+    animation : slideDown 0.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideDown{
+    from{
+        height: 0px;
+    } to {
+        height: 120px;
+    }
+}
+
+.slideMenuUp{
+    animation : slideUp 0.2s ease-in;
+}
+
+@keyframes slideUp{
+    from{
+        height: 120px;
+    } to {
+        height: 0px;
+    }
+}
+
+/* 로그아웃 버튼은 나중에... */
+.logoutBtn {
+    display: none;
+}
