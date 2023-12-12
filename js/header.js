@@ -10,6 +10,13 @@ const clickMenu = (index) => {
     for(let i=0; i<menuArr.length; i++){
         if(i == index){
             menuArr[i].style.color = textColor[i];
+            // 같이키우기 누르면 토글 생성 
+            if(i == 2) {
+                toggleArr[0].style.display = `block`;
+            } else {
+                toggleArr[0].style.display = `none`;
+                toggleArr[1].style.display = `none`;
+            }
         } else {
             menuArr[i].style.color = textColor[3]
         }
@@ -36,12 +43,6 @@ for(let i=0; i<3; i++){
     }
 }
 
-// 같이 키우키 메뉴 눌렀을 때
-const clickRaiseBtn = () => {
-    toggleArr[0].style.display = `block`
-}
-
-$raiseBtn.addEventListener("click", clickRaiseBtn);
 
 // 토글 제어
 const clickToggle = (index) => {
