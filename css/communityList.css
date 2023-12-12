@@ -16,4 +16,198 @@ a {
 
 /* ------------------------------------------------------------ */
 
+#communityList-wrap {
+    margin: 30px auto;
+    width: 1200px;
+}
 
+#txt-section {
+    height: 100px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 100px;
+    background-color: #ececec;
+    border-radius: 5px;
+}
+#txt-section > span{
+    color: rgb(255, 196, 0);
+}
+
+/* ------------------------------------------------------------ */
+
+#list-section {
+    border: 2px solid #d7d7d7;
+    border-radius: 5px;
+}
+
+#listHeader-wrap {
+    width: 1120px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    height: 38px;
+}
+#wirteBtn > a {
+    padding: 6px 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    transition: 0.2s all;
+}
+#wirteBtn > a:hover {
+    background-color: #ececec;
+}
+
+#frm-section {
+    display: flex;
+    column-gap: 40px;
+}
+[name="searchFrm"] > *,
+[name="orderFrm"] > * {
+    height: 38px;
+    border-radius: 3px;
+}
+[name="searchFrm"] > input {
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #d2d2d2;
+    background-color: #f2f5f8;
+}
+[name="searchFrm"] > input::placeholder {
+    color: rgb(190, 190, 190);
+}
+[name="searchFrm"] > input:focus {
+    border: 1px solid #8b8b8b;
+}
+[name="searchFrm"] > button {
+    margin-left: 5px;
+    padding: 0 12px 0 32px;
+    font-size: 16px;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.2s all;
+    background: url(../img/search.png) no-repeat 20% 50%/13px auto;
+}
+[name="searchFrm"] > button:hover {
+    background-color: #ececec;
+}
+
+[name="orderFrm"] > select {
+    padding: 0 30px 0 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none; /* for chrome */
+    -moz-appearance: none; /*for firefox*/
+    appearance: none;
+    background: url(../img/downArrow.png) no-repeat 90% 50%/13px auto;
+}
+[name="orderFrm"] > select:focus {
+    border: 1px solid #8b8b8b;
+}
+
+/* ------------------------------------------------------------ */
+
+#list-wrap {
+    width: 1120px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 18px;
+}
+#thead {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #ededed;
+}
+#tbody {
+    /* width: 95%; */
+    margin: 0 auto;
+}
+.list-content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s all;
+    border: 2px solid #d7d7d7;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.list-content > * {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.list-content:hover {
+    background-color: #f0f0f0;
+}
+.list-content:hover > .post-title > a {
+    text-decoration: underline;
+    text-underline-position: under;
+    font-weight: 500;
+    cursor: pointer;
+}
+#list-wrap p:nth-of-type(1) {
+    width: 10%;
+}
+#list-wrap p:nth-of-type(2) {
+    width: 30%;
+}
+#list-wrap p:nth-of-type(3) {
+    width: 15%;
+}
+#list-wrap p:nth-of-type(4) {
+    width: 15%;
+}
+#list-wrap p:nth-of-type(5) {
+    width: 15%;
+}
+#list-wrap p:nth-of-type(6) {
+    width: 15%;
+}
+
+/* ------------------------------------------------------------ */
+
+#pagination-wrap {
+    margin: 60px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+#pagination-content {
+    display: flex;
+    border: 2px solid #d7d7d7;
+    border-radius: 5px;
+}
+#pagination-content > li {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 45px;
+    border-right: 2px solid #d7d7d7;
+    transition: 0.2s all;
+}
+#pagination-content > li:hover {
+    background-color: #ececec;
+}
+#pagination-content > li:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+#pagination-content > li:last-of-type {
+    border-right: none;
+    border-radius: 0 3px 3px 0;
+}
+#pagination-content > li > a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
