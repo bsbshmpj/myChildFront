@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-    --together-color : rgb(99, 218, 83);;
-    --protect-color : rgb(255, 116, 139);
-    --raise-color : rgb(255, 196, 0);
+    --together-color : #63da53;;
+    --protect-color : #ff748b;
+    --raise-color : #ffc400;
 }
 
 * {
@@ -21,9 +21,6 @@
     margin: 30px auto 0;
     display: flex;
     justify-content: space-between;
-    position: relative;
-
-    z-index: 10;
 }
 
 .headerBtnWrap {
@@ -32,94 +29,46 @@
     list-style: none;
 }
 
-.headerBtn:hover {
-    cursor: pointer;
-}
-
 /*--------- header right ---------*/
 .rightHeaderBtn {
     margin-left: 10px;
 }
+
+.raiseToggle {
+    margin-right: 7px;
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 /*--------- header left ---------*/
 
 /* 공통 메뉴 */
 .menuWrap {
     display: flex;
-    margin-left: 10px;
-    position: absolute;
-    top: 35px;
-    left: 130px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
 }
 
 .menuText {
     font-weight: 800;
-    font-size: 16px;
-    text-align: center;
-    padding: 5px;
-    color: #444;
+    font-size: 20px;
+    margin-right: 25px;
+    color: #dbdbdb;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 /* 표시되는 메뉴 */
 .menuTitleWrap {
-    border-bottom: 2px solid #444;
-}
-
-.menuTitleWrap div {
-    display: block;
-    font-size: 20px;
-}
-
-.menuTitleWrap > .togetherBtn {
-    color: var(--together-color)
-}
-
-.menuTitleWrap > .protectBtn {
-    display: none;
-    color: var(--protect-color)
-}
-
-.menuTitleWrap > .raiseBtn {
-    display: none;
-    color: var(--raise-color)
-}
-
-/* 움직이는 메뉴 */
-.menuBtnWrap {
-    background-color: rgb(240, 240, 240);
-    overflow: hidden;
-    height: 0px;
-    width: 110px;
-    border-radius: 0 0 5px 5px;
-
+    margin-right: 20px;
+    font-size: 28px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* 움직이기 */
-.slideMenuDown {
-    animation : slideDown 0.2s ease-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes slideDown{
-    from{
-        height: 0px;
-    } to {
-        height: 120px;
-    }
-}
-
-.slideMenuUp{
-    animation : slideUp 0.2s ease-in;
-}
-
-@keyframes slideUp{
-    from{
-        height: 120px;
-    } to {
-        height: 0px;
-    }
 }
 
 /* 로그아웃 버튼은 나중에... */

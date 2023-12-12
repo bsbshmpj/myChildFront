@@ -9,7 +9,7 @@
 }
 
 .agree-wrapper {
-  height: 100vh;
+  height: 898px;
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -20,7 +20,7 @@
 
 /* logo */
 .logo {
-  height: 18%;
+  height: 150px;
 
   &:hover {
     cursor: pointer;

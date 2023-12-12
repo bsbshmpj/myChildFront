@@ -20,7 +20,7 @@
 
 .main {
     width: 1200px;
-    height: calc(100vh - 300px);
+    height: calc(898px - 300px);
     margin: 0 auto;
 
     display: flex;
