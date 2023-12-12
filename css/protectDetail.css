@@ -34,7 +34,6 @@ a {
 #route-wrap > img {
     width: 20px;
     height: 20px;
-    transform: rotate(90deg);
 }
 
 #detail-wrap {
@@ -87,5 +86,6 @@ a {
     text-overflow: ellipsis;
 }
 #txt-list-content > :last-child > a:hover {
-    border-bottom: 1px solid #333;
+    text-decoration: underline;
+    text-underline-position: under;
 }
