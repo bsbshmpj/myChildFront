@@ -9,7 +9,7 @@
 }
 
 .login-wrapper {
-    height: 898px;
+    height: 100vh;
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -65,7 +65,7 @@
     justify-content: center;
 
     &:hover{
-        background-color: rgb(181, 225, 255);
+        background-color: rgb(139, 209, 255);
         cursor: pointer;  
     }
 }
