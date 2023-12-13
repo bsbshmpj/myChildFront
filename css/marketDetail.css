@@ -92,7 +92,7 @@
 
 button {
     border: none;
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 5px 10px;
     font-weight: 500;
     font-size: 15px;
@@ -121,8 +121,8 @@ button {
 .market-comment-content {
     background-color: rgb(244, 244, 244);
     padding: 10px 15px;
-    margin-top: 5px;
-    border-radius: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
 
     display: flex;
     align-items: center;
@@ -136,7 +136,7 @@ button {
 }
 
 .write-comment-input {
-    width: 66.9%;
+    width: 70.3%;
     margin-right: 15px;
     padding: 5px 10px;
     border: none;
@@ -159,6 +159,6 @@ button {
 .market-comment-write-btn {
     background-color: rgb(255, 204, 35);
     &:hover {
-        background-color: rgb(255, 227, 100);
+        background-color: rgb(255, 196, 0);
     }
 }

@@ -83,7 +83,7 @@ button {
 .talk-left-btn-wrap > button {
     background-color: rgb(255, 204, 35);
     &:hover {
-        background-color: rgb(255, 227, 100);
+        background-color: rgb(255, 196, 0);
     }
 }
 

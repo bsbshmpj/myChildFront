@@ -56,11 +56,11 @@ a {
     height: 38px;
 }
 
-#wirteBtn {
+#writeBtn {
+    width: 75px;
     height: 38px;
     border: none;
     border-radius: 5px;
-    padding: 0 10px;
     font-weight: 500;
     font-size: 15px;
     line-height: 38px;
@@ -69,7 +69,14 @@ a {
 
     &:hover {
         background-color: rgb(255, 196, 0);
+        cursor: pointer;
     }
+}
+
+#writeBtn > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;    
 }
 
 #frm-section {
@@ -119,9 +126,6 @@ a {
     -moz-appearance: none; /*for firefox*/
     appearance: none;
     background: url(../img/downArrow.png) no-repeat 90% 50%/13px auto;
-}
-[name="orderFrm"] > select:focus {
-    border: 1px solid #8b8b8b;
 }
 
 /* ------------------------------------------------------------ */

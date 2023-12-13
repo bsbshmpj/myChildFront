@@ -4,6 +4,8 @@ const agree2 = document.getElementById("check2");
 
 const $nextBtn = document.querySelector(".agree-next-btn");
 
+$nextBtn.style.background = `rgb(197, 197, 197)`;
+
 allAgree_checked = () => {
     let allAgreeisChecked = allAgree.checked;
     if (allAgreeisChecked) {
@@ -17,8 +19,7 @@ allAgree_checked = () => {
 
 is_checked = () => {
     if (allAgree.checked || (agree1.checked && agree2.checked)) {
-        $nextBtn.style.background = `rgb(163, 220, 255)`;
-    } else {
-        $nextBtn.style.background = `rgb(197, 197, 197)`;
+        $nextBtn.style.background = "";
     }
-};
+}
+

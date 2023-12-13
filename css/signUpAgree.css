@@ -62,7 +62,7 @@ label {
 
 /* agree-next-btn */
 .agree-next-btn {
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(163, 220, 255);
     color: white;
     border-radius: 3px;
     height: 60px;
@@ -74,6 +74,7 @@ label {
     justify-content: center;
 
     &:hover {
+        background-color: rgb(139, 209, 255);
         cursor: pointer;
     }
 }

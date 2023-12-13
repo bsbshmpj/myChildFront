@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+:root {
+    --light-protect : #c0eecc;
+    --protect-hover : #8CE594;
+    --together-color: #63da53;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,52 +23,83 @@ a {
 
 /* ------------------------------------------------------------ */
 
+#communityList-wrap {
+    margin: 30px auto;
+    width: 1200px;
+}
+
+#txt-section {
+    position: relative;
+    height: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: var(--light-protect);
+    border-radius: 5px;
+    line-height: 40px;
+    padding: 0 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#txt-section > #txt-title {
+    width: 290px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    z-index: 100;
+}
+/* ------------------------------------------------------------ */
+
+#img {
+    position: absolute;
+    top: -38px;
+    left: 0px;
+    z-index: 10;
+}
+
 #togetherList-wrap {
     margin: 30px auto;
     width: 1200px;
 }
 
 #banner-section {
-    width: 400px;
-    height: 55px;
     display: flex;
-    border: 2px solid #d2d2d2;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
 }
 .type-outline {
-    width: 33.34%;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid #d2d2d2;
 }
 .type-outline:last-of-type {
     border-right: none;
 }
-.type-outline > .active {
-    background-color: #c0eecc;
-}
+
 .type {
-    width: 115px;
-    height: 40px;
-    /* border: 2px solid #d2d2d2; */
-    background-color: #ebebeb;
+    width: 110px;
+    height: 45px;
+    background-color: white;
     text-align: center;
-    line-height: 40px;
+    line-height: 45px;
     border-radius: 5px;
     font-weight: 700;
+    font-size: 18px;
     transition: 0.2s all;
     cursor: pointer;
 }
 .type:hover {
-    background-color: #c0eecc;
+    background-color: var(--protect-hover);
 }
 
 /* ------------------------------------------------------------ */
 
 #list-wrap {
-    margin: 40px auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     column-gap: 35px;
@@ -117,10 +155,6 @@ svg {
     stroke: #333;
     stroke-width: 60px;
     cursor: pointer;
-    transition: 0.2s all;
-}
-#heart:hover {
-    fill: rgb(255, 80, 80);
 }
 
 /* ------------------------------------------------------------ */
