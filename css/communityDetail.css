@@ -81,7 +81,7 @@ button {
 }
 
 .talk-left-btn-wrap > button {
-    background-color:rgb(255, 204, 35);
+    background-color: rgb(255, 204, 35);
     &:hover {
         background-color: rgb(255, 227, 100);
     }
@@ -90,7 +90,6 @@ button {
 .talk-right-btn-wrap {
     display: flex;
 }
-
 
 /* community comment */
 .talk-comment {
@@ -108,7 +107,7 @@ button {
     font-size: 15px;
 }
 
-.talk-comment-write-wrap{
+.talk-comment-write-wrap {
     display: flex;
     align-items: center;
     background-color: #ffe99f;
@@ -136,7 +135,7 @@ button {
 }
 
 .talk-comment-write-btn {
-    background-color:rgb(255, 204, 35);
+    background-color: rgb(255, 204, 35);
     &:hover {
         background-color: rgb(255, 196, 0);
     }

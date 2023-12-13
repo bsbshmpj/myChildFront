@@ -21,17 +21,17 @@ a {
     width: 1200px;
 }
 
-#txt-section{
+#txt-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
 }
-#txt-section > h1{
+#txt-section > h1 {
     font-size: 35px;
     font-weight: 500;
 }
-#txt-section > p{
+#txt-section > p {
     font-size: 22px;
 }
 

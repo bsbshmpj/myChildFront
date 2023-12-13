@@ -1,9 +1,9 @@
-const $dropUserClose = document.querySelector(".dropUserCloseBtn")
-const $modal = document.querySelector(".modal")
+const $dropUserClose = document.querySelector(".dropUserCloseBtn");
+const $modal = document.querySelector(".modal");
 
 const clickDropUserCloseBtn = () => {
-    $modal.style.visibility = `hidden`
-    $body.style.overflow = "unset"
-}
+    $modal.style.visibility = `hidden`;
+    $body.style.overflow = "unset";
+};
 
-$dropUserClose.addEventListener("click", clickDropUserCloseBtn)
+$dropUserClose.addEventListener("click", clickDropUserCloseBtn);

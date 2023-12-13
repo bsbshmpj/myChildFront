@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-    --cloud-color : rgb(163, 220, 255);
-    --light-cloud : rgb(210, 237, 255);
+    --cloud-color: rgb(163, 220, 255);
+    --light-cloud: rgb(210, 237, 255);
 }
 
 * {
@@ -29,7 +29,7 @@
     margin-bottom: 40px;
     height: 150px;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -50,7 +50,6 @@
     &::-webkit-scrollbar {
         display: none;
     }
-    
 }
 
 /* 아이디찾기 네모 */
@@ -79,11 +78,11 @@
     border-radius: 0 0 5px 5px;
 }
 
-.find-content-title{
+.find-content-title {
     display: flex;
     justify-content: space-between;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -109,7 +108,7 @@
     border-radius: 3px;
     margin-bottom: 15px;
 
-    &:first-of-type{
+    &:first-of-type {
         margin-top: 15px;
     }
 }
@@ -126,8 +125,8 @@
     align-items: center;
     justify-content: center;
 
-    &:hover{
+    &:hover {
         background-color: rgb(181, 225, 255);
-        cursor: pointer;  
+        cursor: pointer;
     }
 }

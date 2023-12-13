@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-    --together-color : rgb(99, 218, 83);;
-    --protect-color : rgb(255, 116, 139);
-    --raise-color : rgb(255, 196, 0);
-    --cloud-color : rgb(94, 193, 255);
-    --light-cloud : rgb(209, 236, 255);
+    --together-color: rgb(99, 218, 83);
+    --protect-color: rgb(255, 116, 139);
+    --raise-color: rgb(255, 196, 0);
+    --cloud-color: rgb(94, 193, 255);
+    --light-cloud: rgb(209, 236, 255);
 }
 
 * {
@@ -33,7 +33,7 @@ img:hover {
 .home-header {
     width: 1200px;
     height: 120px;
-    padding-top: 30px;  
+    padding-top: 30px;
 
     display: flex;
     justify-content: flex-end;
@@ -81,8 +81,6 @@ img:hover {
     row-gap: 50px;
 }
 
-
-
 .home-main-menu {
     display: flex;
     justify-content: center;
@@ -114,7 +112,6 @@ img:hover {
     cursor: pointer;
 }
 
-
 .main-protect {
     color: var(--protect-color);
     background-color: rgb(255, 227, 231);
@@ -133,42 +130,45 @@ img:hover {
 /* main-menu 색 바꾸기 */
 .togetherColor {
     animation: together 0.2s ease-in;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes together {
     from {
         background-color: var(--light-cloud);
         color: var(--cloud-color);
-    } to {
-        color: var(--together-color);  
-        background-color: rgb(211, 255, 224);  
+    }
+    to {
+        color: var(--together-color);
+        background-color: rgb(211, 255, 224);
     }
 }
 .protectColor {
     animation: protect 0.2s ease-in;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes protect {
     from {
         background-color: var(--light-cloud);
         color: var(--cloud-color);
-    } to {
+    }
+    to {
         color: var(--protect-color);
         background-color: rgb(255, 227, 231);
     }
 }
 .raiseColor {
     animation: raise 0.2s ease-in;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes raise {
     from {
         background-color: var(--light-cloud);
         color: var(--cloud-color);
-    } to {
+    }
+    to {
         color: var(--raise-color);
         background-color: rgb(255, 245, 204);
     }
@@ -182,23 +182,24 @@ img:hover {
 @keyframes slideUp {
     from {
         top: 120px;
-    } to {
+    }
+    to {
         top: 80px;
     }
 }
 .slideDetailDown {
     animation: slideDown 0.1s ease-in;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
 
 @keyframes slideDown {
     from {
         top: 80px;
-    } to {
+    }
+    to {
         top: 120px;
     }
 }
-
 
 /* ------------- home page2 ------------ */
 .home-page2 {
@@ -233,7 +234,7 @@ img:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:  0 20px;
+    margin: 0 20px;
 }
 
 .graph-wrap > .graph-title {
@@ -254,8 +255,7 @@ img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-} 
-
+}
 
 @media screen and (max-height: 700px) {
     .logo {

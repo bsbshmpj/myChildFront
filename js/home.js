@@ -11,23 +11,23 @@ const addClassTogetherDetail = () => {
     $togetherTitle.classList.add("togetherColor");
     detailArr[0].classList.add("slideDetailDown");
     findIndex = 0;
-} 
+};
 const addClassProtectDetail = () => {
     $protectTitle.classList.add("protectColor");
     detailArr[1].classList.add("slideDetailDown");
     findIndex = 1;
-} 
+};
 const addClassRaiseDetail = () => {
     $raiseTitle.classList.add("raiseColor");
     detailArr[2].classList.add("slideDetailDown");
     findIndex = 2;
-} 
+};
 
 const mouseOut = () => {
-    titleArr[findIndex].className = ("main-menu");
+    titleArr[findIndex].className = "main-menu";
     detailArr[findIndex].classList.remove("slideDetailDown");
     detailArr[findIndex].classList.add("slideDetailUp");
-}
+};
 
 $togetherTitle.addEventListener("mouseover", addClassTogetherDetail);
 $protectTitle.addEventListener("mouseover", addClassProtectDetail);
@@ -36,4 +36,3 @@ $raiseTitle.addEventListener("mouseover", addClassRaiseDetail);
 $togetherTitle.addEventListener("mouseout", mouseOut);
 $protectTitle.addEventListener("mouseout", mouseOut);
 $raiseTitle.addEventListener("mouseout", mouseOut);
-

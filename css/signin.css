@@ -22,7 +22,7 @@
 .logo {
     height: 150px;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -44,7 +44,7 @@
     padding-left: 20px;
     font-size: 18px;
 
-    &::placeholder{
+    &::placeholder {
         color: rgb(130, 130, 130);
         font-size: 15px;
     }
@@ -64,9 +64,9 @@
     align-items: center;
     justify-content: center;
 
-    &:hover{
+    &:hover {
         background-color: rgb(139, 209, 255);
-        cursor: pointer;  
+        cursor: pointer;
     }
 }
 

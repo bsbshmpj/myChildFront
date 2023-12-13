@@ -101,7 +101,7 @@ svg {
     font-size: 18px;
     overflow: hidden;
 }
-#txt-list-content > p:first-child{
+#txt-list-content > p:first-child {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

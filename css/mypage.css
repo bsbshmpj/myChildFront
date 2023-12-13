@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-    --together-color : rgb(99, 218, 83);
-    --protect-color : rgb(255, 116, 139);
-    --raise-color : rgb(255, 196, 0);
-    --cloud-color : rgb(154, 216, 255);
-    --light-cloud : rgb(222, 241, 255);
+    --together-color: rgb(99, 218, 83);
+    --protect-color: rgb(255, 116, 139);
+    --raise-color: rgb(255, 196, 0);
+    --cloud-color: rgb(154, 216, 255);
+    --light-cloud: rgb(222, 241, 255);
 }
 
 * {
@@ -15,8 +15,6 @@
     font-family: "Noto Sans KR", sans-serif;
     color: #333;
 }
-
-
 
 .main {
     width: 1200px;
@@ -84,7 +82,7 @@
     flex-direction: column;
 }
 
-.picture-change-wrap > .picture-change-btn { 
+.picture-change-wrap > .picture-change-btn {
     margin-top: 10px;
 
     &:hover {
@@ -122,14 +120,13 @@
     position: relative;
 }
 
-
 .mypage-content-content > .change-password-btn {
     display: block;
     background-color: var(--cloud-color);
     width: 120px;
     border: 1px solid #333;
     border-radius: 2px;
-    
+
     &:hover {
         cursor: pointer;
     }
@@ -148,7 +145,7 @@
     margin-bottom: 3px;
 }
 
-.change-pw-content > input{
+.change-pw-content > input {
     width: 100%;
     padding: 5px;
     margin-top: 3px;
@@ -165,7 +162,7 @@
     border-radius: 3px;
     margin-top: 7px;
 
-    &:hover{
+    &:hover {
         background-color: rgb(139, 209, 255);
         cursor: pointer;
     }
