@@ -45,12 +45,19 @@
 
 /*--------- header left ---------*/
 
-/* 공통 메뉴 */
+/* 메뉴 */
 .menuWrap {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 40px;
+}
+
+.menuTitleWrap {
+    margin-right: 20px;
+    font-size: 28px;
+    display: flex;
+    letter-spacing: 0.5px;
 }
 
 .menuText {
@@ -64,11 +71,16 @@
     }
 }
 
-/* 표시되는 메뉴 */
-.menuTitleWrap {
-    margin-right: 20px;
-    font-size: 28px;
-    display: flex;
+.togetherBtn:hover {
+    color: var(--together-color);
+}
+
+.protectBtn:hover {
+    color: var(--protect-color);
+}
+
+.raiseBtn:hover {
+    color: var(--raise-color);
 }
 
 /* 로그아웃 버튼은 나중에... */

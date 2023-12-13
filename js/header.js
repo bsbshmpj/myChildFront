@@ -3,12 +3,12 @@ const menuArr = document.querySelectorAll(".menuText");
 const $menuWrap = document.querySelector("menuTitleWrap");
 
 const toggleArr = document.querySelectorAll(".raiseToggle");
-const $raiseBtn = document.querySelector(".raiseBtn");
 
 // 메뉴
 const clickMenu = (index) => {
   for (let i = 0; i < menuArr.length; i++) {
     if (i == index) {
+      // 누르면 색 바뀜
       menuArr[i].style.color = textColor[i];
       // 같이키우기 누르면 토글 생성
       if (i == 2) {
@@ -18,38 +18,10 @@ const clickMenu = (index) => {
         toggleArr[1].style.display = `none`;
       }
     } else {
-      menuArr[i].style.color = textColor[3];
+      menuArr[i].style.color = ""; // 설정 초기화!
     }
   }
 };
-
-const touchMenu = (index) => {
-  for (let i = 0; i < menuArr.length; i++) {
-    if (i == index) {
-      menuArr[i].style.color = textColor[i];
-    } else {
-      menuArr[i].style.color = textColor[3];
-    }
-  }
-};
-
-const leaveMouse = (index) => {
-  menuArr[index].style.color = textColor[3];
-};
-
-
-for (let i = 0; i < 3; i++) {
-  menuArr[i].onmouseout = function () {
-    leaveMouse(i);
-  };
-
-  menuArr[i].onmouseover = function () {
-    touchMenu(i);
-  };
-  menuArr[i].onclick = function () {
-    clickMenu(i);
-  };
-}
 
 // 토글 제어
 const clickToggle = (index) => {
@@ -61,6 +33,12 @@ const clickToggle = (index) => {
     }
   }
 };
+
+for (let i = 0; i < 3; i++) {
+  menuArr[i].onclick = function () {
+    clickMenu(i);
+  };
+}
 
 for (let i = 0; i < 2; i++) {
   toggleArr[i].onclick = function () {
