@@ -122,13 +122,14 @@
     position: relative;
 }
 
+
 .mypage-content-content > .change-password-btn {
     display: block;
     background-color: var(--cloud-color);
     width: 120px;
     border: 1px solid #333;
     border-radius: 2px;
-
+    
     &:hover {
         cursor: pointer;
     }
@@ -138,22 +139,31 @@
     display: none;
     background-color: white;
     font-size: 13px;
-    padding: 10px;
+    padding: 10px 13px;
     width: 210px;
-    border: 1px solid;
+    border: none;
     border-radius: 3px;
+}
+.change-pw-content {
+    margin-bottom: 3px;
 }
 
 .change-pw-content > input{
-    padding-left: 5px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e4e4e4;
 }
 
 .change-pw-complete {
     width: 100%;
-    margin-top: 10px;
+    padding: 5px 0;
     background-color: rgb(163, 220, 255);
-    border: 1px solid;
+    border: none;
     border-radius: 3px;
+    margin-top: 7px;
 
     &:hover{
         background-color: rgb(139, 209, 255);

@@ -71,6 +71,6 @@
 @media screen and (max-height: 700px) {
     .singup-wrapper {
         height: inherit;
-        margin: 50px 0;
+        margin: 50px auto;
     }
 }

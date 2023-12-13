@@ -77,3 +77,11 @@ label {
     cursor: pointer;
   }
 }
+
+
+@media screen and (max-height: 700px) {
+  .agree-wrapper {
+      height: inherit;
+      margin: 50px auto;
+  }
+}

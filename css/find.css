@@ -27,7 +27,7 @@
 /* logo */
 .logo {
     margin-bottom: 40px;
-    height: 18%;
+    height: 150px;
 
     &:hover{
         cursor: pointer;
