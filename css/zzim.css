@@ -28,7 +28,7 @@ a {
     font-weight: 600;
     text-align: center;
     line-height: 100px;
-    background-color: lavender;
+    background-color: rgb(255, 209, 209);
     border-radius: 5px;
 
     display: flex;
@@ -37,7 +37,7 @@ a {
 }
 
 #txt-section > span {
-    color: rgb(143, 143, 255);
+    color: rgb(255, 121, 121);
     margin-right: 10px;
 }
 

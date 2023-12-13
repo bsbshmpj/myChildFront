@@ -48,14 +48,7 @@ a {
 
 /* ------------------------------------------------------------ */
 
-#list-section {
-    /* border: 2px solid #d7d7d7;
-    border-radius: 5px; */
-}
-
 #listHeader-wrap {
-    /* width: 1120px; */
-    /* margin: 40px auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,20 +57,19 @@ a {
 }
 
 #wirteBtn {
+    height: 38px;
     border: none;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 0 10px;
     font-weight: 500;
     font-size: 15px;
+    line-height: 38px;
+    text-align: center;
     background-color: rgb(255, 204, 35);
 
     &:hover {
         background-color: rgb(255, 196, 0);
     }
-}
-
-#wirteBtn > a:hover {
-    /* background-color: #ececec; */
 }
 
 #frm-section {
@@ -95,25 +87,18 @@ a {
     font-size: 15px;
     outline: none;
     border: none;
-    /* border: 1px solid #d2d2d2; */
     background-color: #ececec;
 }
 [name="searchFrm"] > input::placeholder {
     color: rgb(190, 190, 190);
 }
-[name="searchFrm"] > input:focus {
-    /* border: 1px solid #8b8b8b; */
-}
+
 [name="searchFrm"] > button {
     margin-left: 5px;
     border: none;
     background-color: #fff;
     cursor: pointer;
-    /* transition: 0.2s all; */
     vertical-align: middle;
-}
-[name="searchFrm"] > button:hover {
-    /* background-color: #ececec; */
 }
 
 [name="orderFrm"] > select {
@@ -121,7 +106,6 @@ a {
     font-size: 16px;
     outline: none;
     border: none;
-    /* border: 1px solid #d2d2d2; */
     background-color: #fff;
     cursor: pointer;
     -webkit-appearance: none; /* for chrome */
@@ -129,40 +113,32 @@ a {
     appearance: none;
     background: url(../img/downArrow.png) no-repeat 90% 50%/13px auto;
 }
-[name="orderFrm"] > select:focus {
-    /* border: 1px solid #8b8b8b; */
-}
 
 /* ------------------------------------------------------------ */
 
 #list-wrap {
     /* width: 1120px; */
-    margin: 40px 0;
+    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 32px;
+    column-gap: 36px;
     row-gap: 40px;
 }
 .list-content > a {
-    width: 256px;
-    /* width: 352px; */
+    width: 273px;
     height: 256px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 5px;
-    border: 2px solid #e9e9e9;
     border-radius: 10px;
     transition: 0.2s all;
+    background-color: #f0f0f0;
 }
 .list-content > a:hover {
-    border: 2px solid #d7d7d7;
-    background-color: #ececec;
+    border: 1px solid #898989;
 }
-.list-content:hover .product-title {
-    text-decoration: underline;
-    text-underline-position: under;
-}
+
 .product-title {
     width: 160px;
     text-align: center;
@@ -176,7 +152,7 @@ a {
     width: 100%;
     height: 140px;
     margin-bottom: 10px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     background: url(../img/babyShoes.jpg) no-repeat center / cover;
 }
 .product-price,
@@ -193,32 +169,23 @@ a {
 }
 #pagination-content {
     display: flex;
-    /* border: 2px solid #d7d7d7; */
     border-radius: 5px;
 }
 #pagination-content > li {
-    /* width: 35px; */
-    /* height: 35px; */
     font-size: 16px;
     line-height: 45px;
-    /* border-right: 2px solid #d7d7d7; */
     transition: 0.2s all;
 }
 #pagination-content > li > a:hover {
-    /* background-color: #ececec; */
-    border-bottom: 1.5px solid #333;
+    background-color: var(--light-raise);
+    border-radius: 50%;
 }
-#pagination-content > li:first-of-type {
-    /* border-radius: 3px 0 0 3px; */
-}
-#pagination-content > li:last-of-type {
-    /* border-right: none; */
-    /* border-radius: 0 3px 3px 0; */
-}
+
 #pagination-content > li > a {
     display: block;
-    /* width: 25px; */
     height: 35px;
-    margin: 0 10px;
+    width: 35px;
+    margin: 0 3px;
     text-align: center;
+    line-height: 35px;
 }
