@@ -82,7 +82,8 @@ a {
 
 #frm-section {
     display: flex;
-    column-gap: 40px;
+    align-items: center;
+    column-gap: 10px;
 }
 [name="searchFrm"] > *,
 [name="orderFrm"] > * {
@@ -93,27 +94,26 @@ a {
     padding: 0 10px;
     font-size: 15px;
     outline: none;
-    border: 1px solid #d2d2d2;
-    background-color: #f2f5f8;
+    border: none;
+    /* border: 1px solid #d2d2d2; */
+    background-color: #ececec;
 }
 [name="searchFrm"] > input::placeholder {
     color: rgb(190, 190, 190);
 }
 [name="searchFrm"] > input:focus {
-    border: 1px solid #8b8b8b;
+    /* border: 1px solid #8b8b8b; */
 }
 [name="searchFrm"] > button {
     margin-left: 5px;
-    padding: 0 12px 0 32px;
-    font-size: 16px;
-    border: 1px solid #d2d2d2;
+    border: none;
     background-color: #fff;
     cursor: pointer;
-    transition: 0.2s all;
-    background: url(../img/search.png) no-repeat 20% 50%/13px auto;
+    /* transition: 0.2s all; */
+    vertical-align: middle;
 }
 [name="searchFrm"] > button:hover {
-    background-color: #ececec;
+    /* background-color: #ececec; */
 }
 
 [name="orderFrm"] > select {
@@ -130,7 +130,7 @@ a {
     background: url(../img/downArrow.png) no-repeat 90% 50%/13px auto;
 }
 [name="orderFrm"] > select:focus {
-    border: 1px solid #8b8b8b;
+    /* border: 1px solid #8b8b8b; */
 }
 
 /* ------------------------------------------------------------ */
@@ -187,36 +187,38 @@ a {
 /* ------------------------------------------------------------ */
 
 #pagination-wrap {
-    margin: 60px 0 40px;
+    margin: 30px 0 40px;
     display: flex;
     justify-content: center;
 }
 #pagination-content {
     display: flex;
-    border: 2px solid #d7d7d7;
+    /* border: 2px solid #d7d7d7; */
     border-radius: 5px;
 }
 #pagination-content > li {
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
+    /* width: 35px; */
+    /* height: 35px; */
+    font-size: 16px;
     line-height: 45px;
-    border-right: 2px solid #d7d7d7;
+    /* border-right: 2px solid #d7d7d7; */
     transition: 0.2s all;
 }
-#pagination-content > li:hover {
-    background-color: #ececec;
+#pagination-content > li > a:hover {
+    /* background-color: #ececec; */
+    border-bottom: 1.5px solid #333;
 }
 #pagination-content > li:first-of-type {
-    border-radius: 3px 0 0 3px;
+    /* border-radius: 3px 0 0 3px; */
 }
 #pagination-content > li:last-of-type {
-    border-right: none;
-    border-radius: 0 3px 3px 0;
+    /* border-right: none; */
+    /* border-radius: 0 3px 3px 0; */
 }
 #pagination-content > li > a {
     display: block;
-    width: 45px;
-    height: 45px;
+    /* width: 25px; */
+    height: 35px;
+    margin: 0 10px;
     text-align: center;
 }
