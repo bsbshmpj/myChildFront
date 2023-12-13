@@ -21,6 +21,7 @@ img:hover {
 }
 
 /* ------------- home page1 ------------ */
+
 .home-page1 {
     width: 1200px;
     height: 100vh;
@@ -57,9 +58,15 @@ img:hover {
 }
 
 /* main-logo */
+.logo-wrap {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
-    height: 40%;
-    margin-top: 50px;
+    height: 80%;
 }
 
 /* main-btn */
@@ -70,13 +77,15 @@ img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .home-main-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 300px;
 }
 
 .main-menu-wrap {
