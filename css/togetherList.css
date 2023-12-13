@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-    --light-protect : #c0eecc;
-    --protect-hover : #8CE594;
+    --light-together : #c0eecc;
+    --together-hover : #8CE594;
     --together-color: #63da53;
 
 }
@@ -33,7 +33,7 @@ a {
     height: 100px;
     margin-bottom: 30px;
     text-align: center;
-    background-color: var(--light-protect);
+    background-color: var(--light-together);
     border-radius: 5px;
     line-height: 40px;
     padding: 0 35px;
@@ -51,14 +51,15 @@ a {
     display: flex;
     z-index: 100;
 }
-/* ------------------------------------------------------------ */
 
 #img {
     position: absolute;
-    top: -38px;
+    top: -39.5px;
     left: 0px;
     z-index: 10;
 }
+/* ------------------------------------------------------------ */
+
 
 #togetherList-wrap {
     margin: 30px auto;
@@ -83,7 +84,7 @@ a {
 .type {
     width: 110px;
     height: 45px;
-    background-color: white;
+    background-color: #f0f0f0;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -93,7 +94,7 @@ a {
     cursor: pointer;
 }
 .type:hover {
-    background-color: var(--protect-hover);
+    background-color: var(--together-hover);
 }
 
 /* ------------------------------------------------------------ */
@@ -174,7 +175,7 @@ svg {
     transition: 0.2s all;
 }
 #pagination-content > li > a:hover {
-    background-color: #c0eecc;
+    background-color: var(--light-together);
     border-radius: 50%;
 }
 
