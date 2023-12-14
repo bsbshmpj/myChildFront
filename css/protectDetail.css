@@ -43,9 +43,9 @@ a {
 }
 #map {
     width: 580px;
-    height: 450px;
+    height: 460px;
     background-color: lightgray;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #txt-wrap {

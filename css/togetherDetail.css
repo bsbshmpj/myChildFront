@@ -63,7 +63,6 @@ svg {
     stroke: #333;
     stroke-width: 60px;
     cursor: pointer;
-    transition: 0.2s all;
 }
 
 #txt-wrap {

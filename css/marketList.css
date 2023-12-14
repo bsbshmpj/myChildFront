@@ -93,9 +93,14 @@ a {
     padding: 0 10px;
     font-size: 15px;
     outline: none;
-    border: none;
+    border: 3px solid transparent;
     background-color: #ececec;
 }
+
+[name="searchFrm"] > input:focus {
+    border: 3px solid rgb(255, 204, 35);
+}
+
 [name="searchFrm"] > input::placeholder {
     color: rgb(190, 190, 190);
 }

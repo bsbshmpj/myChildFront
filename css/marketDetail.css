@@ -135,13 +135,22 @@ button {
     background-color: #ffe99f;
 }
 
+.market-comment-write-wrap> .comment-writer-nickname {
+    width: 19%;
+}
+
 .write-comment-input {
     width: 70.3%;
     margin-right: 15px;
     padding: 5px 10px;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 5px;
     font-size: 15px;
+    outline: none;
+}
+
+.write-comment-input:focus {
+    border:2px solid rgb(255, 204, 35);
 }
 
 .comment-writer-pic {

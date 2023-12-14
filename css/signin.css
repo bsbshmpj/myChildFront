@@ -38,11 +38,12 @@
     width: 400px;
     height: 70px;
     background-color: #ebebeb;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 3px;
     margin-top: 15px;
     padding-left: 20px;
     font-size: 18px;
+    outline: none;
 
     &::placeholder {
         color: rgb(130, 130, 130);
